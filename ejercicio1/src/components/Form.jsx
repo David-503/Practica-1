@@ -3,9 +3,9 @@ import Todo from '../components/Todo';
 const Form =()=>{
     const [todo,setTodo]=useState({});
     const [todos,setTodos]=useState([
-        {todo: 'todo 1'},
-        {todo: 'todo 2'},
-        {todo: 'todo 3'}
+        {todo: 'todo 1',count:1},
+        {todo: 'todo 2',count:2},
+        {todo: 'todo 3',count:3}
     ])
     
     const handleChange = e=>setTodo({[e.target.name]: e.target.value})
@@ -15,6 +15,7 @@ const Form =()=>{
             return
         }
             setTodos([...todos,todo])
+
 
     }
     const deleteTodo = indice => {
