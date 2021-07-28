@@ -16,7 +16,6 @@ const Form =()=>{
         }
             setTodos([...todos,todo])
 
-        
     }
     const deleteTodo = indice => {
         const newTodos = [...todos] 
